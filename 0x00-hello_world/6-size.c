@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 /**
 * main - prints size
 *Description: prints size of the various variables in c in bytes
