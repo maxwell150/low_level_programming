@@ -1,11 +1,9 @@
-/*declaring, initializing and print myText*/
+/* main.c */
 #include <stdio.h>
 
 int main(void)
 {
-	char myText[] = "Programming is like building a multilingual puzzle";
-
-	puts(myText);
+	puts("\"Programming is like building a multilingual puzzle\"");
 	return (0);
 
 }
