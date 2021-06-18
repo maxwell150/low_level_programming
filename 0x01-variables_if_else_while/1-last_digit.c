@@ -4,7 +4,6 @@
 /**
 * main - generates random number n
 * Description: determines whether n is 0, n > 5 or n < 6
-*
 * Return: 0
 */
 int main(void)
@@ -22,6 +21,6 @@ int main(void)
 	else if (lastDigit == 0)
 		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
 	else
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, lastDigit);
 	return (0);
 }
