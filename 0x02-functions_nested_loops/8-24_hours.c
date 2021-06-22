@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* jack_bauer - prints a 24 hour timer 
+* jack_bauer - prints a 24 hour timer
 * Description: prints every minute
 */
 void jack_bauer(void)
@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	time = 0;
 
-	while (time < 0)
+	while (time < 24)
 	{
 		for (x = 0; x < 60; x++)
 		{
