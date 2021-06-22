@@ -14,11 +14,11 @@ void jack_bauer(void)
 	{
 		for (x = 0; x < 60; x++)
 		{
-			_putchar(x / 10 + 48);
-			_putchar(x % 10 + 48);
-			_putchar(':');
 			_putchar(time / 10 + 48);
 			_putchar(time % 10 + 48);
+			_putchar(':');
+			_putchar(x / 10 + 48);
+			_putchar(x % 10 + 48);
 			_putchar('\n');
 		}
 		time++;
