@@ -4,7 +4,6 @@
  */
 void times_table(void)
 {
-	int i, j, prod;
 	int x, y, z;
 
 	int x = 0;
