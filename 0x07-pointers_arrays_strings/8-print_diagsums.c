@@ -12,7 +12,7 @@ void print_diagsums(int *a, int size)
 	int x, j, sum = 0;
 
 	for (x = 0; x < size; x++)
-		sum += *(a + x * size + x);
+		sum += *((a + x) * (size + x));
 
 	printf("%i, ", sum);
 	sum = 0;
