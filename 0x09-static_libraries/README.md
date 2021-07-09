@@ -20,4 +20,4 @@
 #	char *_strpbrk(char *s, char *accept);
 #	char *_strstr(char *haystack, char *needle);
 #
-# 1 - a script that creates a static library from all the .c files that are in the current directory
+# 1 - a script that creates a static library called liball.a from all the .c files that are in the current directory
