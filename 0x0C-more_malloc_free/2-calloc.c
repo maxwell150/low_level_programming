@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "holberton.h"
-
+#include <string.h>
 /**
  *_calloc -allocates memory for an array
  *@nmemb: number of element in the array
