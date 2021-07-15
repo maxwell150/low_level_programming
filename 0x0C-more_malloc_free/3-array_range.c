@@ -1,24 +1,32 @@
 #include <stdlib.h>
-#include "holberton.h"
-
+#include <stdio.h>
 /**
- * array_range - creates an array of integers
- * @min: starting int
- * @max: max int
- * Return: array of integers
+ *array_range - creates an array of int
+ *
+ *@min:minimum
+ *@max:maximum
+ *
+ *Return:pointer
  */
 int *array_range(int min, int max)
 {
-	int len, i;
-	int *ptr;
+	int size, i = 0;
+	int *p;
 
 	if (min > max)
+	{
 		return (NULL);
-	len = max - min + 1;
-	ptr = malloc(sizeof(int) * len);
-	if (!ptr)
+	}
+	size = (max - min) + 1;
+	p = malloc(sizeof(int) * size);
+	if (!p)
+	{
+		free(p);
 		return (NULL);
-	for (i = 0; i < len; i++)
-		ptr[i] = min++;
-	return (ptr);
+	}
+	for (i = 0; min <= max; min++, i++)
+	{
+		p[i] = min;
+	}
+	return (p);
 }
