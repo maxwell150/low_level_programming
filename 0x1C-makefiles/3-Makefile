@@ -8,11 +8,13 @@ RM = rm -f
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-fclean: oclean clean
+clean :
+        $(RM)  $(TOCLEAN) $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+        $(RM) $(OBJ)
 
-clean :
-	$(RM)  $(TOCLEAN) $(NAME)
+
+fclean: oclean clean
+
 re: oclean all
